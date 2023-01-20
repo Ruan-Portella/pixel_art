@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f0e9;
+  transition: .6s;
+}
+h2 {
+  font-size: 20px;
+  color: #1b1b1a;
+}
+#container {
+  display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+input:checked + .slider {
+  background: #b892ff;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.dark-mode {
+  background: #343333;
+}
+.dark-mode h2 {
+  color: #f7f0e9;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#color-palette:hover{
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+
+.color{
+        border: 1px solid black;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        transform: skew(20deg);
+        transform: rotate(45deg);
+        margin-left: 10px;
+        margin-right: 5px;
+        
+}
+
+.matriz{
+    height: 80%;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-align: center;
+    align-items: center;
+
+}
+
+#pixel-board{
+        max-width: 210px;
+        margin: 0 auto;
+}
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+#clear-board {
+    margin-left: 10px;
+}
+
+
